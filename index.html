@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BookShelf</title>
+	
+	<style type="text/css">
+
+		body{
+			background-color: #b7e3f8;
+			text-align: center;
+			}
+
+		</style>
+</head>
+
+
+<h1>Moataz Dola</h1>
+<h2>BookShelf</h2>
+<br>
+<body>
+	<div><div><img src="https://archive.org/services/img/breakingdawn0000meye_f6f5"></div>
+	<div><h3>Breaking dawn</h3><h4>Meyer, Stephenie</h4></div></div>
+	<br>
+	<div><div><img src="https://archive.org/services/img/brcsklt"></div>
+	<div><h3>Skeleton man</h3><h4>Bruchac, Joseph</h4></div></div>
+	<br>
+	<div><div><img src="https://archive.org/services/img/mebeforeyou0000moye_y2z4"></div>
+	<div><h3>Me before you</h3><h4 >Moyes, Jojo</h4></div></div>
+	<br>
+	<div><div><img src="https://archive.org/services/img/nada00lafo_0"></div>
+	<div><h3>Nada</h3><h4> Carmen Laforet</h4></div></div>
+	<br>
+
+	<div>
+		
+		<div id="bookshelf">
+			<template class="book">
+				<p>Book Title</p>
+				<p>Book Author</p>
+				<p>Book Image</p>
+				<button class="btn btn-primary">Remove</button>
+			<hr>
+			</template>
+		</div>
+	</div>
+  
+
+	<br>
+	<h1>Add New Book</h1>
+ 	<div class="container" >
+ 		<div class="row">
+ 			<div class="col"></div>
+ 			<div class="col">
+ 				<form action="submit" onsubmit="return AddBook()" id="AddBook">
+					<input class="form-control"  type="text" name="title" placeholder="Title of the book..." required="">
+					<br>
+					<input class="form-control" type="text" name="author" placeholder="Author of the book..." required="">
+					<br>
+					<input type="url" accept="image/*" name="image" id="imgURL" placeholder="Image Link..." required="" />
+					<p><img id="output" width="200" /></p>
+					<button class="btn btn-danger" type="submit">Add book</button>
+					<br>
+				</form>
+
+ 			</div>
+ 			<div class="col"></div>
+ 		</div>
+		
+	</div>
+	
+  <script src="main.js"></script>
+</body>
+
+</html>
